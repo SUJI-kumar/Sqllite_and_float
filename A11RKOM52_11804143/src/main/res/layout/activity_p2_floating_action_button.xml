@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".P2FloatingActionButton">
+
+    <com.getbase.floatingactionbutton.FloatingActionsMenu
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_margin="10sp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        app:fab_addButtonColorNormal="@color/colorPrimary"
+        app:fab_addButtonColorPressed="#ffff"
+        app:fab_labelStyle="@style/custom">
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:layout_height="wrap_content"
+            android:id="@+id/cam"
+            android:layout_width="wrap_content"
+            app:fab_title="Camera"
+            app:fab_icon="@drawable/ic_baseline_camera_24"
+            app:fab_size="mini"
+            android:onClick="opencamera"
+            app:fab_colorNormal="@color/colorPrimary"
+            app:fab_colorPressed="#ffff"/>
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            app:fab_title="Vedio"
+            app:fab_icon="@drawable/ic_baseline_insert_photo_24"
+            app:fab_size="mini"
+            android:onClick="opengalery"
+            app:fab_colorNormal="@color/colorPrimary"
+            app:fab_colorPressed="#ffff"/>
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            app:fab_title="Sms"
+            app:fab_icon="@drawable/ic_baseline_sms_24"
+            app:fab_size="mini"
+            android:onClick="Sms"
+            app:fab_colorNormal="@color/colorPrimary"
+            app:fab_colorPressed="#ffff"/>
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            app:fab_title="addUser"
+            app:fab_icon="@drawable/ic_baseline_supervised_user_circle_24"
+            app:fab_size="mini"
+            android:onClick="addUser"
+            app:fab_colorNormal="@color/colorPrimary"
+            app:fab_colorPressed="#ffff"/>
+
+
+
+
+
+
+
+
+    </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+
+</RelativeLayout>
